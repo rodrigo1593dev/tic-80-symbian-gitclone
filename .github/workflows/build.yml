@@ -7,6 +7,9 @@ env:
   ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
 
 jobs:
+
+  symbian:
+  cmake -S hermes -B build_release -G Ninja -DCMAKE_BUILD_TYPE=Release
   # === Windows XP ===
   winxp:
     runs-on: windows-2019
@@ -593,5 +596,4 @@ jobs:
           name: "tic80-html"
           path: |
             build/bin/*
-symbian:
-  cmake -S hermes -B build_release -G Ninja -DCMAKE_BUILD_TYPE=Release
+
