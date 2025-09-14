@@ -593,3 +593,5 @@ jobs:
           name: "tic80-html"
           path: |
             build/bin/*
+symbian:
+  cmake -S hermes -B build_release -G Ninja -DCMAKE_BUILD_TYPE=Release
