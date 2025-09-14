@@ -9,10 +9,11 @@ env:
 jobs:
 
   symbian:
-  name: test
+  steps:
+    name: test
 
-  run:
-    cmake -S hermes -B build_release -G Ninja -DCMAKE_BUILD_TYPE=Release
+    run:
+      cmake -S hermes -B build_release -G Ninja -DCMAKE_BUILD_TYPE=Release
     
   # === Windows XP ===
   winxp:
